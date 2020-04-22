@@ -1,0 +1,206 @@
+ [zamil@Zaq-Pc ~]$ git config --global user.name "mohamed zamil"
+[zamil@Zaq-Pc ~]$ git config --global usern.email "mohamed.kanjirathingal-rafeek@stud.th-deg.de"
+[zamil@Zaq-Pc ~]$ cd Exercise
+[zamil@Zaq-Pc Exercise]$ ls
+[zamil@Zaq-Pc Exercise]$ git int
+git: 'int' is not a git command. See 'git --help'.
+
+The most similar command is
+        init
+[zamil@Zaq-Pc Exercise]$ git init
+Initialized empty Git repository in /home/zamil/Exercise/.git/
+[zamil@Zaq-Pc Exercise]$ git add .
+[zamil@Zaq-Pc Exercise]$ git commit -m "First commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'zamil@Zaq-Pc.(none)')
+[zamil@Zaq-Pc Exercise]$ git config --global user.name "mohamed zamil"                                 
+[zamil@Zaq-Pc Exercise]$ git config --global usern.email "mohamed.kanjirathingal-rafeek@stud.th-deg.de"
+[zamil@Zaq-Pc Exercise]$ git commit -m "First commit"                                                  
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'zamil@Zaq-Pc.(none)')
+[zamil@Zaq-Pc Exercise]$ git commit -m 'First commit' 
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'zamil@Zaq-Pc.(none)')
+[zamil@Zaq-Pc Exercise]$ git config --global user.email "mohamed.kanjirathingal-rafeek@stud.th-deg.de"  
+[zamil@Zaq-Pc Exercise]$ git config --global user.name "mohamed zamil"                                 
+[zamil@Zaq-Pc Exercise]$ git commit -m 'First commit'
+[master (root-commit) 571ceae] First commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .Initial File.kate-swp
+ create mode 100644 Initial File
+[zamil@Zaq-Pc Exercise]$ git add .
+[zamil@Zaq-Pc Exercise]$ git remote add origin https://github.com/Zaq73/Exercise.git
+[zamil@Zaq-Pc Exercise]$ git push origin master
+Username for 'https://github.com': zaq73
+Password for 'https://zaq73@github.com': 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 630 bytes | 630.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Zaq73/Exercise.git
+ * [new branch]      master -> master
+[zamil@Zaq-Pc Exercise]$ git add .
+[zamil@Zaq-Pc Exercise]$ git commit -m 'First commit'
+[master a30142b] First commit
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+ delete mode 100644 .Initial File.kate-swp
+[zamil@Zaq-Pc Exercise]$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+[zamil@Zaq-Pc Exercise]$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+[zamil@Zaq-Pc Exercise]$ git push origin master
+Username for 'https://github.com': zaq73
+Password for 'https://zaq73@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 328 bytes | 328.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Zaq73/Exercise.git
+   571ceae..a30142b  master -> master
+[zamil@Zaq-Pc Exercise]$ git status
+On branch master
+nothing to commit, working tree clean
+[zamil@Zaq-Pc Exercise]$ ls -la
+total 16
+drwxr-xr-x  3 zamil zamil 4096 22. Apr 11:20  .
+drwx------ 27 zamil zamil 4096 22. Apr 11:18  ..
+drwxr-xr-x  8 zamil zamil 4096 22. Apr 11:32  .git
+-rw-r--r--  1 zamil zamil   63 22. Apr 11:20 'Initial File'
+[zamil@Zaq-Pc Exercise]$ touch .gitignore 
+[zamil@Zaq-Pc Exercise]$ git status       
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+[zamil@Zaq-Pc Exercise]$ git add.gitignore
+git: 'add.gitignore' is not a git command. See 'git --help'.
+[zamil@Zaq-Pc Exercise]$ git add .gitignore
+[zamil@Zaq-Pc Exercise]$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        gitignore test
+
+[zamil@Zaq-Pc Exercise]$ git add .
+[zamil@Zaq-Pc Exercise]$ git push origin master
+Username for 'https://github.com': 
+Password for 'https://github.com': 
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Zaq73/Exercise.git/'
+[zamil@Zaq-Pc Exercise]$ git add .gitignore
+[zamil@Zaq-Pc Exercise]$ git push origin master
+Username for 'https://github.com': zaq73
+Password for 'https://zaq73@github.com': 
+Everything up-to-date
+[zamil@Zaq-Pc Exercise]$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   gitignore test
+
+[zamil@Zaq-Pc Exercise]$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   gitignore test
+
+[zamil@Zaq-Pc Exercise]$ git add .gitignore    
+[zamil@Zaq-Pc Exercise]$ git push origin master
+Username for 'https://github.com': zaq73
+Password for 'https://zaq73@github.com': 
+Everything up-to-date
+[zamil@Zaq-Pc Exercise]$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   gitignore test
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    gitignore test
+
+[zamil@Zaq-Pc Exercise]$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .gitignore
+        new file:   gitignore test
+
+[zamil@Zaq-Pc Exercise]$ git add .
+[zamil@Zaq-Pc Exercise]$ git commit -m 'secon commit gitignore file'
+[master 6fed7ac] secon commit gitignore file
+ 2 files changed, 1 insertion(+)
+ create mode 100644 .gitignore
+ create mode 100644 gitignore test
+[zamil@Zaq-Pc Exercise]$ git push origin master
+Username for 'https://github.com': zaq73
+Password for 'https://zaq73@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 6.44 KiB | 6.44 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Zaq73/Exercise.git
+   a30142b..6fed7ac  master -> master
+[zamil@Zaq-Pc Exercise]$ git status
+On branch master
+nothing to commit, working tree clean
+[zamil@Zaq-Pc Exercise]$ 
